@@ -1,4 +1,4 @@
-package com.shawood.util;
+package com.shawood.netty.util;
 
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
@@ -7,9 +7,8 @@ import io.netty.handler.ssl.util.SelfSignedCertificate;
 import javax.net.ssl.SSLException;
 import java.security.cert.CertificateException;
 
-public final class ServerUtil {
+public class ServerUtil {
     private static final boolean SSL = System.getProperty("ssl") != null;
-
 
     private ServerUtil() {
     }

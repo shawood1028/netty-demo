@@ -11,6 +11,7 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 
 public final class EchoServer {
+    // 指定端口号
     static final int PORT = Integer.parseInt(System.getProperty("port", "8007"));
 
     public static void main(String[] args) throws Exception {
@@ -35,7 +36,6 @@ public final class EchoServer {
                             if (sslCtx != null) {
                                 p.addLast(sslCtx.newHandler(ch.alloc()));
                             }
-                            // p.addLast(sslCtx.newHandler(ch.alloc()));
                             p.addLast(serverHandler);
                         }
                     });
