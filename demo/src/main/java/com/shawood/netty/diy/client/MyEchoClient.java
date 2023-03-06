@@ -1,4 +1,4 @@
-package com.shawood.netty.client;
+package com.shawood.netty.diy.client;
 
 import com.shawood.netty.util.ServerUtil;
 import io.netty.bootstrap.Bootstrap;
